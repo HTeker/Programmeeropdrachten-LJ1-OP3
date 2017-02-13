@@ -14,6 +14,19 @@ public class Auto {
     private float kilometersOpLiter;
     private String brandstof;
 
+    public void copyValues(Auto auto){
+        if(auto != null){
+            this.setKenteken(auto.getKenteken());
+            this.setAantalDeuren(auto.getAantalDeuren());
+            this.setKleur(auto.getKleur());
+            this.setMerk(auto.getMerk());
+            this.setType(auto.getType());
+            this.setMaxSnelheid(auto.getMaxSnelheid());
+            this.setKilometersOpLiter(auto.getKilometersOpLiter());
+            this.setBrandstof(auto.getBrandstof());
+        }
+    }
+
     public void print(){
         printRowOutlined("Kenteken:", this.getKenteken());
         printRowOutlined("Aantal deuren:", Integer.toString(this.getAantalDeuren()));

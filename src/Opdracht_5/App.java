@@ -36,8 +36,28 @@ public class App {
         auto3.setKilometersOpLiter(19.0f);
         auto3.setBrandstof("Diesel");
 
-        auto1.print();
-        auto2.print();
-        auto3.print();
+        //auto1.print();
+        //auto2.print();
+        //auto3.print();
+
+        Auto[] autos = new Auto[5];
+        autos[0] = auto1;
+        autos[1] = auto2;
+        autos[2] = auto3;
+
+        Auto auto4 = new Auto();
+        auto4.copyValues(auto1);
+        auto4.setMaxSnelheid(200f);
+
+        Auto auto5 = new Auto();
+        auto5.copyValues(auto2);
+        auto5.setMaxSnelheid(180f);
+
+        autos[3] = auto4;
+        autos[4] = auto5;
+
+        for(Auto auto: autos){
+            auto.print();
+        }
     }
 }
