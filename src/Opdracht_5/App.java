@@ -57,7 +57,23 @@ public class App {
         autos[4] = auto5;
 
         for(Auto auto: autos){
-            auto.print();
+            //auto.print();
         }
+
+        App app = new App();
+        Auto snelste = app.getSnelsteAuto(autos);
+    }
+
+    public Auto getSnelsteAuto(Auto[] autos){
+        Auto snelste = new Auto();
+        snelste.setMaxSnelheid(0);
+
+        for(Auto auto: autos){
+            if(auto.getMaxSnelheid() > snelste.getMaxSnelheid()){
+                snelste = auto;
+            }
+        }
+
+        return snelste;
     }
 }
