@@ -6,17 +6,38 @@ package Opdracht_5;
 public class App {
 
     public static void main(String[] arguments){
-        Auto auto = new Auto();
+        Auto auto1 = new Auto();
+        auto1.setKenteken("4-CSD-32");
+        auto1.setAantalDeuren(4);
+        auto1.setKleur("Zwart");
+        auto1.setMerk("Audi");
+        auto1.setType("A6");
+        auto1.setMaxSnelheid(210.4f);
+        auto1.setKilometersOpLiter(12.6f);
+        auto1.setBrandstof("Diesel");
 
-        auto.setKenteken("4-CSD-32");
-        auto.setAantalDeuren(4);
-        auto.setKleur("Zwart");
-        auto.setMerk("Audio");
-        auto.setType("A6");
-        auto.setMaxSnelheid(210.4f);
-        auto.setKilometersOpLiter(12.6f);
-        auto.setBrandstof("Diesel");
+        Auto auto2 = new Auto();
+        auto2.setKenteken("34-DF-23");
+        auto2.setAantalDeuren(2);
+        auto2.setKleur("Blauw");
+        auto2.setMerk("Golf");
+        auto2.setType("6");
+        auto2.setMaxSnelheid(190.9f);
+        auto2.setKilometersOpLiter(13.5f);
+        auto2.setBrandstof("Benzine");
 
-        auto.print();
+        Auto auto3 = new Auto();
+        auto3.setKenteken("12-AS-23");
+        auto3.setAantalDeuren(2);
+        auto3.setKleur("Grijs");
+        auto3.setMerk("Volkswagen");
+        auto3.setType("Beetle");
+        auto3.setMaxSnelheid(170.2f);
+        auto3.setKilometersOpLiter(19.0f);
+        auto3.setBrandstof("Diesel");
+
+        auto1.print();
+        auto2.print();
+        auto3.print();
     }
 }

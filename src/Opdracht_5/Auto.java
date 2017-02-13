@@ -23,6 +23,7 @@ public class Auto {
         printRowOutlined("Maximum snelheid:", Float.toString(this.getMaxSnelheid()));
         printRowOutlined("Aantal km's op 1 l.:", Float.toString(this.getKilometersOpLiter()));
         printRowOutlined("Brandstof:", this.getBrandstof());
+        System.out.printf("\n");
     }
 
     private void printRowOutlined(String left, String right) {
@@ -34,7 +35,9 @@ public class Auto {
         this.kenteken = kenteken;
     }
 
-    public void setAantalDeuren(int aantalDeuren){ this.aantalDeuren = aantalDeuren; }
+    public void setAantalDeuren(int aantalDeuren){
+        this.aantalDeuren = aantalDeuren;
+    }
 
     public void setKleur(String kleur){
         this.kleur = kleur;
@@ -64,7 +67,9 @@ public class Auto {
         return kenteken;
     }
 
-    public int getAantalDeuren() { return aantalDeuren; }
+    public int getAantalDeuren() {
+        return aantalDeuren;
+    }
 
     public String getKleur(){
         return kleur;
