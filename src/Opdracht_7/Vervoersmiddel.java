@@ -98,7 +98,7 @@ public class Vervoersmiddel {
         System.out.printf("\n");
     }
 
-    private void printRowOutlined(String left, String right) {
+    protected void printRowOutlined(String left, String right) {
         System.out.printf("%-25s", left);
         System.out.printf("%s\n", right);
     }
