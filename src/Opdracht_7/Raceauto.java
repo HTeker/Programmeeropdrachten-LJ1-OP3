@@ -11,7 +11,7 @@ public class Raceauto extends Auto {
         this.maxKracht = maxKracht;
     }
 
-    public int getMaxKracht(){
+    public float getMaxKracht(){
         return this.maxKracht;
     }
 
