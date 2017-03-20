@@ -5,21 +5,43 @@ package Opdracht_7;
  */
 public class Racefiets extends Fiets {
     // De onderstaande properties zijn niet specifiek voor racefietsen, omdat het naar mijn inzicht onmogelijk is dat er bepaalde kenmerken zijn die specifiek gelden voor racefietsen
+    /**
+     * Het aantal versnellingen dat de racefiets heeft
+     */
     int aantalVersnellingen;
+    /**
+     * De weerstand die de racefiets heeft tegen wind
+     */
     float luchtweerstand;
 
+    /**
+     * Zet het aantal versnellingen van de racefiets
+     * @param aantalVersnellingen
+     */
     public void setAantalVersnellingen(int aantalVersnellingen){
         this.aantalVersnellingen = aantalVersnellingen;
     }
 
+    /**
+     * Geeft het aantal versnellingen dat de racefiets heeft
+     * @return
+     */
     public int getAantalVersnellingen(){
         return this.aantalVersnellingen;
     }
 
+    /**
+     * Zet de weerstand die de racefiets heeft
+     * @param luchtweerstand
+     */
     public void setLuchtweerstand(float luchtweerstand){
         this.luchtweerstand = luchtweerstand;
     }
 
+    /**
+     * Geeft de weerstand die de racefiets heeft
+     * @return
+     */
     public float getLuchtweerstand(){
         return this.luchtweerstand;
     }
